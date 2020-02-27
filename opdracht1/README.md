@@ -1,48 +1,30 @@
 # Frontend voor Designers - opdracht 1: Een Micro-interactie uitwerken en testen
 
-Ontwerp een user interface voor een gegeven use case. Werk je ontwerp uit in HTML, CSS en Javascript om te kunnen testen in een browser.
+Ik heb gekozen voor de case: In een verzameling films wil ik een aantal leuke films kunnen bewaren om ze later te bekijken. 
 
-## Use cases
-- In een verzameling films wil ik een aantal leuke films kunnen bewaren om ze later te bekijken.
-- In een lijst studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is om te huren.
-- In een verzameling muzieknummers wil ik de volgorde kunnen veranderen om een playlist te maken voor een feest.
-- Als ik foto's zoek wil ik ze kunnen filteren op kleur om verassende zoekresultaten te krijgen die ik kan gebruiken voor mijn Visual Research.
-- Je mag ook een eigen idee uitwerken. Kom dan eerst even overleggen.
+## stap 1 schetsen
 
-## Werkwijze
-Kies een van de Use Cases, schets eerst een ontwerp voor de interactie. Codeer in HTML, CSS en JavaScript en test verschillende versies van je ontwerp in een browser.
+Ik ben in de eerste les begonnen met schetsen, vooral wat mijn ideeen waren die ik wilde gaan maken. 
 
-## Planning
-1. Les 1: Briefing opdracht 1 en beginnen met schetsen en coderen
-2. Les 2: Eerste versie testen
-2. Les 3: Oplevering en beoordeling
+![interactie schetsen](img/screen1.jpg)
+![interactie schetsen](img/screen2.jpg)
+![interactie schetsen](img/screen3.jpg)
 
+De foto's plaatsen en de navigatie maken ging wel goed. Ik wist hoe dit moest en had het in de eerste les al af. Toen wilde ik de hartjes erin zetten. Via Nicole uit de klas kreeg ik een code om een svg in mn code te plaasten. Zij had hulp gekregen hierbij. 
 
-## Criteria
-1. De uitwerking van je ontwerp moet het doen in een browser en device naar keuze.
-2. De [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) nr 04 & 11 zijn goed toegepast.
-3. Je ontwerp is aantoonbaar getest en verbeterd. Verslaglegging en resultaat publiceren op [Github](https://github.com).
+De volgende stap was om de hartjes in de afbeeldingen te hebben zodat je weet dat dat hartje bij die film hoorde. 
 
-## Resources
+![interactie schetsen](img/screen4.jpg)
 
-### Wat doe je ook alweer in JavaScript?
-1. Gebruik de [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) om een element in je html te selecteren
-2. Koppel een [evenListener](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event) aan het element om een mouse-event te detecteren
-3. Gebruik het [Classlist object](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) om een css class aan een element toe te voegen of weg te halen.
+Later heb ik nog iets nieuws geleerd, namelijk dat je door 1 regel code een deel van je site responsive kan maken. Toen zag het er zo uit:
 
+![interactie schetsen](img/screen5.jpg)
+![interactie schetsen](img/screen6.jpg)
 
-### Resources per use case
-- Dit is een goede resource om een microinteractie te maken met Javascript: [Hey designers, if you only know one thing about JavaScript, this is what I would recommend](https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/)
-- Dit is een goede uitleg van [Drag & Drop](https://developer.mozilla.org/en-US/docs/Web/API/Document/drag_event). Handig voor Use case 3.
-- Met [QuerySelectAll ](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll) kun je gebruiken om  meerdere elementen te selecteren. Handig voor de 4e use case.
+De volgende stap was dat je een film kon liken door op het hartje te klikken en dat de kleur van het hartje dan veranderd. Dit was erg veel gedoe ik Javascript. Uiteindelijk is het gelukt met een toggle.
 
+![interactie schetsen](img/screen7.jpg)
 
-### Volgende stap
+De laatste stap was dat je bij het hartje rechtsboven een 1tje ziet verschijnen als je een film liked. Dit heb ik gedaan via een filmpje op youtube.
 
-Voor wat complexere micro-interacties waar verschillende states elkaar moeten opvolgen kun je aan het eind van een transition of animation weer iets laten gebeuren. Gebruik hiervoor in Javascript de:
-
-
-
-
-- eventlistener: [transitionend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event)
-- eventlistener: [animationend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event)
+![interactie schetsen](img/screen8.jpg)
