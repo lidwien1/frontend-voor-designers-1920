@@ -6,7 +6,7 @@ Ik heb gekozen voor de case: In een verzameling films wil ik een aantal leuke fi
 
 Ik ben in de eerste les begonnen met schetsen, vooral wat mijn ideeen waren die ik wilde gaan maken. 
 
-![interactie schetsen](opdracht1/img/img/screen1.jpg)
+![interactie schetsen](/img/img/screen1.jpg)
 ![interactie schetsen](img/img/screen2.jpg)
 ![interactie schetsen](img/img/screen3.jpg)
 
