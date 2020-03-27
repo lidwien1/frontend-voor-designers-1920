@@ -31,6 +31,6 @@ Ik heb in 'script.js' het volgende veranderd:
 
 Dan komt het er zo uit te zien:
 
-![interactie schetsen](iteratie/screen2.jpg)
+![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen2.jpg)
 
 ALs het mij lukt om de carousel er weer uit te laten zien zoals bij opdracht 2 ga ik verder werken aan het uiterlijk van de carousel en met toetsenbord.
