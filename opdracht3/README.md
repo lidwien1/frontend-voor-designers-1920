@@ -17,7 +17,7 @@ Het is mij gelukt om ipv de foto's die ik in opdracht 2 had gebruikt voor de car
 
 (Ik heb even de width van het beeld veranderd zodat je de foto's iets dichter naast elkaar ziet staan.)
 
-![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen1)
+![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen1.jpg)
 
 # stap 2: Het weer op een carousel laten lijken
 Als je op de bolletjes klikt wordt je nog steeds verwezen naar de afbeelding waar het bolletje bij hoort. Echter zijn mijn buttons aan de zijkanten verdwenen en ik heb echt alles geprobeerd maar ik krijg ze niet terug. 
