@@ -1,6 +1,6 @@
 Vraag:
-- Hoe krijg ik mijn buttons terug?
-- Hoe krijg ik de afbeeldingen weer zoals bij opdracht 2?
+- Hoe krijg ik de namen van de director en actors onder een film?
+- Hoe krijg ik meer informatie over de film erin?
 
 Dit filmpje heb ik gebruikt bij opdracht 2:
 https://www.youtube.com/watch?v=gBzsE0oieio
@@ -33,4 +33,11 @@ Dan komt het er zo uit te zien:
 
 ![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen2.jpg)
 
-ALs het mij lukt om de carousel er weer uit te laten zien zoals bij opdracht 2 ga ik verder werken aan het uiterlijk van de carousel en met toetsenbord.
+De carousel ziet er weer uit zoals die eruit hoort te zien! :) 
+
+Het is mij gelukt om de bolletjes mee te laten bewegen als je van film veranderd. Ook is het mij gelukt om de carousel te bedienen met de pijltjes van mijn toetsenbord. 
+
+# stap 3: Meer informatie over de film laten zien
+Nu wil ik dus de director en de actors van de film laten zien onder de film. Ik heb wat geprobeerd maar het lukt niet helemaal. Ik heb voor de rest geen idee waar ik kan beginnen zodat dit werkt.
+
+Ook wil ik graag meer informatie weergeven per film (en dat dan bv alleen maar laten zien als je ergens op klikt, dat het dan uitschuift). De informatie uit de link van 'info over 1 film'.
