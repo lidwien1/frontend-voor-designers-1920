@@ -47,6 +47,76 @@ request.onload = function () {
 		}
 		newLi.appendChild(newReviews);
         
+        		// DETAILS TOEVOEGEN MET KNOPJE EN "LIGHTBOX"
+		/* details button aanmaken */
+		let infoKnop = document.createElement("button");
+		/* tekst is i */
+		infoKnop.innerHTML = "I";
+		/* en een class moreInfo */
+		infoKnop.value = "moreInfo";
+		
+		/* de button laten luisteren naar clicks */
+		/* dan wordt de class showDetails aan de body toegevoegd */
+		/* met die class wordt met CSS de details getoond */
+		infoKnop.addEventListener("click", function(){
+			console.log("klik");
+			this.parentNode.classList.add("showDetails");	
+		})
+		
+		/* de knop toevoegen aan de film */
+		newLi.appendChild(infoKnop);
+		
+		
+		/* de details aanmaken */
+		/* beginnen met een container waar alle details in kunnen */
+		/* voor nu stop ik daar zo alleen de regisseur in */
+		let movieDetails = document.createElement("section");
+		
+		/* de details laten luisteren naar clicks */
+		/* dan wordt de class showDetails aan de body verwijderd */
+		/* met die class wordt met CSS de details weer verstopt */
+		/* je kunt dus op het hele vlak van de details klikken om de details te verwijderen */
+		movieDetails.addEventListener("click", function(){
+			console.log("klik");
+			this.parentNode.classList.remove("showDetails");	
+		})
+		
+		/* de details vullen met info */
+		/* de p waar straks de tekst inkomt - deze wordt toegevoegd aan de film */
+		let directorTekst = document.createElement("p");
+		/* de regisseur info uit de movie halen */
+		/* dat is een array met 1 item - deze 6 films hebben allemaal maar 1 regisseur */
+		let directorsArray = movies[i].directors;
+		/* de naam van de regisseur uit de array halen */
+		/* er is maar 1 regisseur --> we heoven niet te loopen */
+		/* de info zit in het eerste element in de array --> dus index 0*/
+		/* en daarvan dan het attribuut name */
+		let directorName = directorsArray[0].name;
+		/* de directorTekst vullen met een stringetje "regisseur: " plus de directorName */
+		directorTekst.innerHTML = "Regisseur: " + directorName;
+		/* de directorTekst toevoegen aan de film */
+		movieDetails.appendChild(directorTekst);
+		
+//		/* hier meer info aan de details toevoegen*/
+//        let actorsTekst = document.createElement("p");
+//        let actorArray = movies[i].actors;
+//        let actorName = actorArray[0].name;
+//        actorsTekst.innerHTML = "Actors: " + actorName;
+//        movieDetails.appendChild(actorsTekst);
+        
+        let actorsTekst = document.createElement("p");
+        let actorsName = document.createElement("ul");
+        for (let t = 0; t < movies[i].actors.length; t++) {
+            let actosrName = document.createElement("li");
+            actosrName.innerHTML = movies[i].actors[t].name;
+            actosrName.appendChild(actorsName);
+        }
+
+		
+		/* de details toevoegen aan de film */
+		newLi.appendChild(movieDetails);
+      
+        
 //        // Directors
 //        let newDirectors = Document.createElement("tekst");
 //        newImg.innerHTML = movies[i].directors;

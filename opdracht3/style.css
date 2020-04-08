@@ -130,6 +130,40 @@ h1{
 
 /* Bron: https://www.youtube.com/watch?v=VYsVOamdB0g&t=522s*/
 
+/* CSS VOOR DE BUTTON EN DE DETAILS */
 
+/* de details-button */
+button[value="moreInfo"] {
+	position:absolute;
+	width:2rem; line-height:2rem;
+	left:calc(63% - 1.5rem);
+	padding:0;
+	bottom:5rem;
+	font-size:inherit;
+	border-radius: 50%;
+    background-color: black;
+    color: white;
+}
 
+/* de details*/
+.carousel_slide section {
+	position:absolute;
+	width:21em;
+	left:calc(50% - 12em);
+	top:2em; bottom:2em;
+	
+	padding:1.5em;
+	text-align:left;
+	background:#ffffccee;
+	z-index:100;
+    
+	
+	/* initieel verborgen */
+	display:none;
+}
+
+.carousel_slide.showDetails section {
+	/* initieel verborgen */
+	display:block;
+}
 

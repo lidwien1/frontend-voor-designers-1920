@@ -1,43 +1,32 @@
-Vraag:
-- Hoe krijg ik de namen van de director en actors onder een film?
-- Hoe krijg ik meer informatie over de film erin?
-
-Dit filmpje heb ik gebruikt bij opdracht 2:
-https://www.youtube.com/watch?v=gBzsE0oieio
-
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data
 
-Ik heb ervoor gekozen om verder te gaan met de carousel, wat ik hiervan nog moest verbeteren:
-- de knoppen
-- de bolletjes mee laten bewegen
-- bedienen met toetsenbord
-
-# stap 1: Data ophalen
-Het is mij gelukt om ipv de foto's die ik in opdracht 2 had gebruikt voor de carousel de afbeeldingen van de films te hebben. Nu was het alleen geen carousel meer maar stonden de foto's horizontaal op de pagina en kon je er doorheen scrollen. 
-
-(Ik heb even de width van het beeld veranderd zodat je de foto's iets dichter naast elkaar ziet staan.)
-
-![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen1.jpg)
+Voor deze opdracht ga je een functionaliteit ontwerpen met externe data. De data is JSON die met een [REST API](https://developer.mozilla.org/en-US/docs/Glossary/REST) van een externe bron wordt ingeladen met Javascript.  Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
 
 
-# stap 2: Het weer op een carousel laten lijken
-Als je op de bolletjes klikt wordt je nog steeds verwezen naar de afbeelding waar het bolletje bij hoort. Echter zijn mijn buttons aan de zijkanten verdwenen en ik heb echt alles geprobeerd maar ik krijg ze niet terug. 
+## Werkwijze
+Schets eerst hoe de functionaliteit er uit komt te zien. Maak daarna een breakdown-schets hoe de verschillende componenten technisch moeten gaan werken...
 
-Toen ging ik proberen om de afbeeldingen weer op elkaar te krijgen zoals ik dat ook bij de carousel heb gedaan. Dit lukt wel soort van maar de laatste afbeelding kwam bovenop en de bolletje deden het niet meer.
+Werk daarna je ontwerp uit in HTML, CSS en JavaScript.
 
-Ik heb in 'script.js' het volgende veranderd:
-- regel 52 verwijderd
-- regel 55 veranderd naar: var slides = newImg
 
-Dan komt het er zo uit te zien:
+## Planning
+1. Les 5: Briefing opdracht 3, API uitzoeken, tutorial doorlopen, schetsen en beginnen met coderen
+2. Les 6: Eerste versie testen. Meenemen: breakdown-schets, JSON laden in de console, daarna in Javascript HTML elementen aanmaken, de data koppelen en toevoegen aan de DOM
+3. Les 7: Demo presenteren
+4. Les 8: Oplevering en beoordeling
 
-![interactie schetsen](https://github.com/lidwien1/frontend-voor-designers-1920/blob/master/opdracht3/iteratie/screen2.jpg)
 
-De carousel ziet er weer uit zoals die eruit hoort te zien! :) 
+## Criteria
+1. De uitwerking van je ontwerp moet het doen in een browser en device naar keuze.
+2. De data wordt van een externe bron ingeladen met Javascript.
+3. Een aantal states van de [UI stack](https://www.scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack/) worden opgevangen en zijn vormgegeven.
+4. In de demo maak je gebruik van meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) zodat gebruikers je ontwerp op verschillende manieren kunnen bedienen.
+5. In de demo dien je rekening te houden met de interface design principles 04, 08, 09 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/).
+6. Je ontwerp is aantoonbaar getest en verbeterd. Verslaglegging en resultaat publiceren op Github
 
-Het is mij gelukt om de bolletjes mee te laten bewegen als je van film veranderd. Ook is het mij gelukt om de carousel te bedienen met de pijltjes van mijn toetsenbord. 
 
-# stap 3: Meer informatie over de film laten zien
-Nu wil ik dus de director en de actors van de film laten zien onder de film. Ik heb wat geprobeerd maar het lukt niet helemaal. Ik heb voor de rest geen idee waar ik kan beginnen zodat dit werkt.
-
-Ook wil ik graag meer informatie weergeven per film (en dat dan bv alleen maar laten zien als je ergens op klikt, dat het dan uitschuift). De informatie uit de link van 'info over 1 film'.
+## Resources
+- Gebruik verschillende [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) om de functionaliteit mee te bedienen.
+- Met behulp van [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest) of [Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) kan een [JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) file worden geladen. Daarna kun je de HTML elementen aanmaken, de juiste content koppelen en aan de DOM toevoegen.
+- Hier staat een [tutorial](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON) voor het laden van JSON data en het aanmaken van HTMl elementen.
+- Bij het laden van externe data kan de server verschillende [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) doorgeven, die kun je gebruiken om feedback te tonen.
