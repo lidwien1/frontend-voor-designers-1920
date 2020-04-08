@@ -1,3 +1,5 @@
+https://lidwien1.github.io/frontend-voor-designers-1920/
+
 # frontend voor designers - opdracht 3: Een interactie uitwerken met externe data
 
 Ik heb ervoor gekozen om verder te gaan met de carrousel, wat ik hiervan nog moest verbeteren:
@@ -45,4 +47,6 @@ Hier heb ik weer hulp gevraagd aan Sanne. Hij heeft een button aangemaakt, als j
 De film details zien er zo uit:
 
 <img width="506" alt="screen5" src="https://user-images.githubusercontent.com/59923657/78787923-5c1d1600-79ab-11ea-9a65-8809cfc28993.png">
+
+# stap 6: Responsive maken
 
