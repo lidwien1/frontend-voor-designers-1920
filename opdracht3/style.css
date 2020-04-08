@@ -1,29 +1,42 @@
-body{
+body {
     background-color: black;
+    margin: 0;
 }
 
-h1{
+h1 {
     color: white;
-    text-align:center;
+    text-align: center;
     font-size: 3em;
 }
+
 .carousel {
     position: relative;
-    height: 600px;
-    width: 80%;
+
+
+    /* dit het ik gedaan */
+    height: 522px;
+    /*    width: 80%;*/
+
     margin: 0 auto;
 }
 
+/* responsive --> sanne */
+@media (min-width:420px) {
+    .carousel {
+        height: 600px;
+        width: 80%;
+    }
+}
 
 /* Contaier van lijst met films */
-.carousel_container{
+.carousel_container {
     height: 100%;
-    position: relative;   
+    position: relative;
     overflow: hidden;
 }
 
 /* Lijst met films */
-.carousel_track{
+.carousel_track {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -33,7 +46,7 @@ h1{
 }
 
 /* Een film */
-.carousel_slide{
+.carousel_slide {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -52,77 +65,107 @@ h1{
 }
 */
 
+/* titel film */
 .carousel_slide h2 {
-	text-align:center;
+    text-align: center;
     color: white;
 }
 
-.carousel_slide img{
+/* afbeelding film */
+.carousel_slide img {
     width: auto;
-    height: 78%;
+    /* dit het ik gedaan */
+    height: 75%;
+}
+
+/* responsive --> sanne */
+@media (min-width:420px) {
+    .carousel_slide img {
+        height: 78%;
+    }
 }
 
 .carousel_slide ul {
-	margin:0;
-	list-style:none;
-	display:flex;
-	justify-content:center;
-	padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
 }
 
 .carousel_slide ul li {
-	width:3em; height:3em;
-    margin:2px 5px;
-	background-color:gray;
+    width: 3em;
+    height: 3em;
+    margin: 2px 5px;
+    background-color: gray;
     color: white;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	-webkit-clip-path:polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
-   clip-path:polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
+    clip-path: polygon(50% 0, 61.2% 34.5%, 97.6% 34.5%, 68.2% 55.9%, 79.4% 90.4%, 50% 69%, 20.6% 90.4%, 31.8% 55.9%, 2.4% 34.5%, 38.8% 34.5%, 50% 0);
 }
 
 /* Buttons */
-.carousel_button{
-     position: absolute;
+.carousel_button {
+    position: absolute;
     width: 50px;
     height: 50px;
-	 top: 50%;
+    top: 50%;
     transform: translateY(-50%);
-	 cursor: pointer;
-	 border: none;
+    cursor: pointer;
+    border: none;
     /* beide buttons boven films liggen */
     z-index: 10;
 }
 
-.carousel_button--left{
-    left: 300px;
+.carousel_button--left {
+    /* responsive --> sanne */
+    right: calc(50% + (268.56px / 2) - 50px);
+
     color: white;
     background-color: black;
     transform: translateZ(50em);
 }
 
-.carousel_button--right{
-    right: 300px;
+.carousel_button--right {
+
+    /* responsive --> sanne */
+    left: calc(50% + (268.56px / 2) - 50px);
+
     color: white;
     background-color: black;
     transform: translateZ(100em);
 }
 
+/* responsive --> sanne */
+@media (min-width:420px) {
+    .carousel_button--left {
+        right: calc(50% + (321.65px / 2));
+    }
+
+    .carousel_button--right {
+        left: calc(50% + (321.65px / 2));
+    }
+}
+
 /* Bolletjes */
-.carousel_nav{
+.carousel_nav {
     display: flex;
     justify-content: center;
-    padding 10px 0;
+    padding: 10px 0;
     color: white;
 }
-.carousel_indicator{
+
+.carousel_indicator {
+    display: inline-block;
     border: 0;
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background: white;;
-    margin: 15 10px;
+    background: white;
+    ;
+    margin: 15px 10px;
     cursor: pointer;
 }
 
@@ -133,65 +176,74 @@ h1{
 
 /* Bron: https://www.youtube.com/watch?v=VYsVOamdB0g&t=522s*/
 
-/* CSS VOOR DE BUTTON EN DE DETAILS */
+/* CSS VOOR DE DETAIL BUTTON EN DE DETAILS */
 
 /* de details-button */
 button[value="moreInfo"] {
-	position:absolute;
-	width:2rem; line-height:2rem;
-	left:calc(63% - 1.5rem);
-	padding:0;
-	bottom:5rem;
-	font-size:inherit;
-	border-radius: 50%;
+    position: absolute;
+    width: 2rem;
+    line-height: 2rem;
+
+    /* responsive --> sanne */
+    left: calc(50% + (268.56px / 2) - 2rem - 1rem);
+
+    padding: 0;
+    bottom: 5rem;
+    font-size: inherit;
+    border-radius: 50%;
     background-color: black;
     color: white;
 }
 
+/* responsive --> sanne */
+@media (min-width:420px) {
+    button[value="moreInfo"] {
+        left: calc(50% + (321.65px / 2) - 2rem - 1rem);
+    }
+}
+
 /* de details*/
 .carousel_slide section {
-	position:absolute;
-	width:21em;
-    height: 28em;
-	left:calc(50% - 12em);
-	top:3em; bottom:2em;
-	
-	padding:1.5em;
-	text-align:left;
-	background:grey;
+    position: absolute;
+
+    /* dit het ik gedaan */
+    width: calc(270px - 3em);
+    height: calc(393px - 3em);
+    left: calc(50% - 135px);
+    top: 4.2em;
+    bottom: 2em;
+
+    padding: 1.5em;
+    text-align: left;
+    background: grey;
     color: white;
-	z-index:100;
-    
-	
-	/* initieel verborgen */
-	display:none;
+    z-index: 100;
+    overflow: scroll;
+
+    /* initieel verborgen */
+    display: none;
 }
 
 .carousel_slide.showDetails section {
-	/* initieel verborgen */
-	display:block;
+    /* initieel verborgen */
+    display: block;
 }
 
-p, dt, dd{
-    font-size: 10px;
+/* responsive --> sanne */
+@media (min-width:420px) {
+    .carousel_slide section {
+        width: calc(322px - 3em);
+        height: calc(470px - 3em);
+        left: calc(50% - 161px);
+    }
 }
 
-/*
-@media (min-width: 400px) {
-    .carousel_button--left {
-    left: 1px;
-    }
-    
-    .carousel_button--right{
-    right: 1px;
+p,
+dt,
+dd {
+    /* dit het ik gedaan */
+    font-size: 16px;
 }
-    button[value="moreInfo"]{
-        left:calc(80%);
-    }
-    .carousel_slide section{
-        width: 17em;
-        left:calc(9%)
-    }
-    }
-*/
 
+/* Bron: Sanne 
+/* Bron: https://www.youtube.com/watch?v=VYsVOamdB0g&t=522s*/

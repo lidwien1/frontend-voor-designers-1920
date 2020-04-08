@@ -21,7 +21,7 @@ request.send();
 /* hier wordt de carrousel gevuld met de films */
 request.onload = function () {
     const movies = request.response;
-    
+
     for (let i = 0; i < movies.length; i++) {
         // voor elke film een li met titel, foto en reviews aanmaken en toevoegen
         let newLi = document.createElement("li");
@@ -49,7 +49,7 @@ request.onload = function () {
         newLi.appendChild(newReviews);
 
         /* DETAILS TOEVOEGEN MET KNOPJE EN "LIGHTBOX" */
-        
+
         /* details button aanmaken */
         let infoKnop = document.createElement("button");
         /* tekst is i */
@@ -81,7 +81,7 @@ request.onload = function () {
             console.log("klik");
             this.parentNode.classList.remove("showDetails");
         })
-        
+
         /* de details vullen met info */
         /* release date */
         let releaseText = document.createElement("p");
@@ -91,7 +91,7 @@ request.onload = function () {
         releaseText.appendChild(releaseDate);
 
         movieDetails.appendChild(releaseText);
-        
+
         /* actors */
         let actorsLabel = document.createElement("dt");
         /* het directorLabel vullen met een stringetje "regisseur:" */
@@ -136,10 +136,10 @@ request.onload = function () {
 
         /* de details toevoegen aan de film */
         newLi.appendChild(movieDetails);
-        
+
 
         /****     DE CARROUSEL     ****/
-        
+
         document.body.querySelector("ul.carousel_track").appendChild(newLi);
 
         /* voor elke film een bolletje aanmaken en toevoegen */
