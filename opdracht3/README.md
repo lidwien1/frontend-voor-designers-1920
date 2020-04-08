@@ -46,3 +46,7 @@ De film details zien er zo uit:
 
 <img width="506" alt="screen5" src="https://user-images.githubusercontent.com/59923657/78787923-5c1d1600-79ab-11ea-9a65-8809cfc28993.png">
 
+# stap 6: Responsive maken
+Dit lukte helaas niet helemaal bij mij, ik heb hier wat moeite mee. Sanne heeft mij geholpen hiermee, nu is het op meerde scherm formaten goed te zien. 
+
+
