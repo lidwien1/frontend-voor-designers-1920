@@ -72,8 +72,9 @@ h1{
 
 .carousel_slide ul li {
 	width:3em; height:3em;
-	 margin:0 5px;
-	background-color:gold;
+    margin:2px 5px;
+	background-color:gray;
+    color: white;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -98,12 +99,14 @@ h1{
     left: 300px;
     color: white;
     background-color: black;
+    transform: translateZ(50em);
 }
 
 .carousel_button--right{
     right: 300px;
     color: white;
     background-color: black;
+    transform: translateZ(100em);
 }
 
 /* Bolletjes */
@@ -149,12 +152,14 @@ button[value="moreInfo"] {
 .carousel_slide section {
 	position:absolute;
 	width:21em;
+    height: 28em;
 	left:calc(50% - 12em);
-	top:2em; bottom:2em;
+	top:3em; bottom:2em;
 	
 	padding:1.5em;
 	text-align:left;
-	background:#ffffccee;
+	background:grey;
+    color: white;
 	z-index:100;
     
 	
@@ -166,4 +171,27 @@ button[value="moreInfo"] {
 	/* initieel verborgen */
 	display:block;
 }
+
+p, dt, dd{
+    font-size: 10px;
+}
+
+/*
+@media (min-width: 400px) {
+    .carousel_button--left {
+    left: 1px;
+    }
+    
+    .carousel_button--right{
+    right: 1px;
+}
+    button[value="moreInfo"]{
+        left:calc(80%);
+    }
+    .carousel_slide section{
+        width: 17em;
+        left:calc(9%)
+    }
+    }
+*/
 

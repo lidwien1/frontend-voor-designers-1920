@@ -80,6 +80,31 @@ request.onload = function () {
 			console.log("klik");
 			this.parentNode.classList.remove("showDetails");	
 		})
+        
+           let releaseText = document.createElement("p");
+        let releaseDate = document.createElement("date");
+        releaseDate.innerHTML = movies[i].release_date;
+        releaseText.innerHTML = 'Release Date: ';
+        releaseText.appendChild(releaseDate);
+        
+        movieDetails.appendChild(releaseText);
+        
+        let actorsLabel = document.createElement("dt");
+		/* het directorLabel vullen met een stringetje "regisseur:" */
+		actorsLabel.innerHTML = "Actors:";
+		movieDetails.appendChild(actorsLabel);
+		
+		let actorsArray = movies[i].actors;
+		/* de actors zijn er wel meer - loopje nodig */
+		for (let t = 0; t < actorsArray.length; t++) {
+			let actorTekst = document.createElement("dd");
+			actorTekst.innerHTML = actorsArray[t].actor_name;
+			movieDetails.appendChild(actorTekst);
+		}
+        
+        let genre = document.createElement("p");
+        genre.innerHTML = "Genre: " + movies[i].genres;
+        movieDetails.appendChild(genre);
 		
 		/* de details vullen met info */
 		/* de p waar straks de tekst inkomt - deze wordt toegevoegd aan de film */
@@ -104,35 +129,23 @@ request.onload = function () {
 //        actorsTekst.innerHTML = "Actors: " + actorName;
 //        movieDetails.appendChild(actorsTekst);
         
-        let actorsTekst = document.createElement("p");
-        let actorsName = document.createElement("ul");
-        for (let t = 0; t < movies[i].actors.length; t++) {
-            let actosrName = document.createElement("li");
-            actosrName.innerHTML = movies[i].actors[t].name;
-            actosrName.appendChild(actorsName);
-        }
-
+//        let actorsTekst = document.createElement("p");
+//        let actorsName = document.createElement("ul");
+//        for (let k = 0; k < movies[i].actors.length; k++) {
+//            let actosrName = document.createElement("li");
+//            actosrName.innerHTML = movies[i].actors[k].name;
+//            actosrName.appendChild(actorsName);
+//        }
+        
+        let plot = document.createElement("p");
+        plot.innerHTML = 'Plot: ' + movies[i].plot;
+        movieDetails.appendChild(plot);
+        
 		
 		/* de details toevoegen aan de film */
 		newLi.appendChild(movieDetails);
       
         
-//        // Directors
-//        let newDirectors = Document.createElement("tekst");
-//        newImg.innerHTML = movies[i].directors;
-//        newLi.appendChild(newImg);
-        
-        // Directors
-//        let newDirectors = document.createElement("ul");
-//		for (let t = 0; t < movies[i].directors.length; t++) {
-//			let newDirectors = document.createElement("li");
-//			newDirectors.innerHTML = movies[i].directors[t].name
-//			newDirectors.appendChild(newDirectors);
-//		}
-//		newLi.appendChild(newDirectors);
-        
-    
-		
 		document.body.querySelector("ul.carousel_track").appendChild(newLi);
 		
 		// voor elke film een bolletje aanmaken en toevoegen
@@ -271,8 +284,7 @@ function initieerInteractie() {
 }
 
 	//Bron: https://www.youtube.com/watch?v=gBzsE0oieio
-
-
+    //Bron: Sanne + uitleg
 /*
 document.addEventListener("keydown", function (e) {
     console.log(e.keyCode);
